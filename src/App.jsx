@@ -1,11 +1,10 @@
 import React from "react";
-
+import HomePage from "./pages/HomePage";
+import "animate.css";
 export default function App() {
   return (
-    <div className="App w-full  flex justify-center">
-      <div className="container pt-4">
-        <h1>Welcome</h1>
-      </div>
+    <div className="w-full h-[100vh] ">
+      <HomePage />
     </div>
   );
 }
