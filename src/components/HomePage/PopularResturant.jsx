@@ -83,11 +83,11 @@ export default function PopularResturant() {
             <img src={span} alt="" />
           </div>
         </div>
-        <div className="mt-10 grid max-md:grid-cols-1  max-xl:grid-cols-4  min-xl:grid-cols-6 gap-3.5 w-full">
+        <div className="mt-10 grid max-md:grid-cols-1  max-xl:grid-cols-4  min-xl:grid-cols-6 gap-3.5 w-full ">
           {resturant.map((el, index) => (
             <div
               key={index}
-              className="card bg-base-100 shadow-sm min-md:col-span-2 "
+              className="card bg-base-100 shadow-sm min-md:col-span-2 cursor-pointer "
             >
               <figure>
                 <div className="relative">

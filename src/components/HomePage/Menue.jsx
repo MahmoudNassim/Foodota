@@ -28,7 +28,7 @@ export default function Menue() {
           return (
             <div
               key={index}
-              className="flex flex-col gap-2 items-center justify-center"
+              className="flex flex-col gap-2 items-center justify-center cursor-pointer"
             >
               <div className="w-[200px]">
                 <img src={el.img} alt="" />

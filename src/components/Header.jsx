@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import logo from "../assets/images/logo.png";
+import blackLogo from "../assets/images/logoblack.svg";
 import { TbMenu3 } from "react-icons/tb";
 
 export default function Header() {
@@ -19,12 +20,12 @@ export default function Header() {
       className={`w-full z-50 transition-all   duration-300 ${
         isFixed
           ? "lg:fixed top-0 left-0 bg-white text-black shadow-lg animate__animated animate__bounceInDown"
-          : "static text-white"
+          : "static "
       }`}
     >
       <div className="container max-w-7xl mx-auto  flex items-center justify-center max-lg:justify-between gap-8 py-4 px-4">
         <div className="w-[190px]">
-          <img src={logo} alt="Logo" />
+          <img src={isFixed ? blackLogo : logo} alt="Logo" />
         </div>
 
         <div className="max-lg:hidden lg:flex gap-10 text-[16px] leading-24 font-semibold">

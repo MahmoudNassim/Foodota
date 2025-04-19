@@ -6,10 +6,9 @@ export default function HeroSection() {
   return (
     <div className="w-[100%]">
       <div
-        className="heroSection   bg-cover bg-no-repeat bg-right flex flex-col w-full"
+        className="heroSection   bg-cover bg-no-repeat  flex flex-col w-full"
         style={{ backgroundImage: `url(${bg})` }}
       >
-        <Header />
         <MainContent />
       </div>
     </div>

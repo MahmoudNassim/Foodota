@@ -48,25 +48,25 @@ export default function MainContent() {
       </div>
       <h2 className="text-white text-[22px]">Popular Restaurant</h2>
       <div className="flex gap-2">
-        <div className="w-[78px] h-[78px]">
+        <div className="w-[78px] h-[78px] cursor-pointer">
           <img src={organic} alt="" />
         </div>
-        <div className="w-[78px] h-[78px]">
+        <div className="w-[78px] h-[78px] cursor-pointer">
           <img src={tasty} alt="" />
         </div>
-        <div className="w-[78px] h-[78px]">
+        <div className="w-[78px] h-[78px] cursor-pointer">
           <img src={foodchef} alt="" />
         </div>
-        <div className="w-[78px] h-[78px]">
+        <div className="w-[78px] h-[78px] cursor-pointer">
           <img src={tony} alt="" />
         </div>
-        <div className="w-[78px] h-[78px]">
+        <div className="w-[78px] h-[78px] cursor-pointer">
           <img src={masterchef} alt="" />
         </div>
-        <div className="w-[78px] h-[78px]">
+        <div className="w-[78px] h-[78px] cursor-pointer">
           <img src={funchicken} alt="" />
         </div>
-        <div className="w-[78px] h-[78px]">
+        <div className="w-[78px] h-[78px] cursor-pointer">
           <img src={ganteng} alt="" />
         </div>
       </div>
