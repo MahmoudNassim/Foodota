@@ -9,7 +9,7 @@ import { FaYoutube } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <div className="bg-[#F2F2F2] w-full mt-20">
+    <div className="bg-[#F2F2F2] w-full ">
       <div className="max-w-7xl mx-auto container p-10  flex flex-col gap-5 items-center ">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center items-center gap-x-2 gap-y-7">
           <div className="flex flex-col gap-2.5">

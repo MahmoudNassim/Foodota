@@ -9,6 +9,7 @@ export default function HeroSection() {
         className="heroSection   bg-cover bg-no-repeat  flex flex-col w-full"
         style={{ backgroundImage: `url(${bg})` }}
       >
+        <Header />
         <MainContent />
       </div>
     </div>

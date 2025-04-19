@@ -1,74 +1,9 @@
 import React, { useState } from "react";
 import span from "../../assets/images/span.png";
-import drink from "../../assets/images/drink.jpg";
-import organic from "../../assets/images/organic.jpg";
+import { useResturaunt } from "../../store/store";
 
 export default function PopularResturant() {
-  const [resturant] = useState([
-    {
-      cover: drink,
-      name: "Organic Arcadian Food",
-      brand: organic,
-      date: "12:01 am - 11:59 pm",
-      location: " Main Boulevard, Lahore,",
-    },
-    {
-      cover: drink,
-      name: "Organic Arcadian Food",
-      brand: organic,
-      date: "12:01 am - 11:59 pm",
-      location: " Main Boulevard, Lahore,",
-    },
-    {
-      cover: drink,
-      name: "Organic Arcadian Food",
-      brand: organic,
-      date: "12:01 am - 11:59 pm",
-      location: " Main Boulevard, Lahore,",
-    },
-    {
-      cover: drink,
-      name: "Organic Arcadian Food",
-      brand: organic,
-      date: "12:01 am - 11:59 pm",
-      location: " Main Boulevard, Lahore,",
-    },
-    {
-      cover: drink,
-      name: "Organic Arcadian Food",
-      brand: organic,
-      date: "12:01 am - 11:59 pm",
-      location: " Main Boulevard, Lahore,",
-    },
-    {
-      cover: drink,
-      name: "Organic Arcadian Food",
-      brand: organic,
-      date: "12:01 am - 11:59 pm",
-      location: " Main Boulevard, Lahore,",
-    },
-    {
-      cover: drink,
-      name: "Organic Arcadian Food",
-      brand: organic,
-      date: "12:01 am - 11:59 pm",
-      location: " Main Boulevard, Lahore,",
-    },
-    {
-      cover: drink,
-      name: "Organic Arcadian Food",
-      brand: organic,
-      date: "12:01 am - 11:59 pm",
-      location: " Main Boulevard, Lahore,",
-    },
-    {
-      cover: drink,
-      name: "Organic Arcadian Food",
-      brand: organic,
-      date: "12:01 am - 11:59 pm",
-      location: " Main Boulevard, Lahore,",
-    },
-  ]);
+  const { restaurant } = useResturaunt();
   return (
     <div className="bg-[#F2F2F2] w-full">
       <div className="max-w-7xl mx-auto container min-md:p-10 flex justify-center flex-col items-center ">
@@ -84,7 +19,7 @@ export default function PopularResturant() {
           </div>
         </div>
         <div className="mt-10 grid max-md:grid-cols-1  max-xl:grid-cols-4  min-xl:grid-cols-6 gap-3.5 w-full ">
-          {resturant.map((el, index) => (
+          {restaurant.map((el, index) => (
             <div
               key={index}
               className="card bg-base-100 shadow-sm min-md:col-span-2 cursor-pointer "

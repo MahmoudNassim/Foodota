@@ -11,7 +11,7 @@ import six from "../../assets/images/06.png";
 
 export default function HomeSlides() {
   return (
-    <div className="max-w-7xl mx-auto container w-full mt-20">
+    <div className="max-w-7xl mx-auto container w-full mt-20 mb-20">
       <Swiper
         modules={[Autoplay]}
         spaceBetween={50}

@@ -1,42 +1,9 @@
 import React, { useState } from "react";
 import span from "../../assets/images/span.png";
-import cakeh from "../../assets/images/cakeh.jpg";
-import sushi from "../../assets/images/sushi.jpg";
-import breakfast from "../../assets/images/breakfast.jpg";
-import wrap from "../../assets/images/wrap.jpg";
 import none from "../../assets/images/none.png";
-
+import { useNewArrival } from "../../store/store";
 export default function NewArrival() {
-  const [newarrival] = useState([
-    {
-      img: cakeh,
-      sort: "Appetizers",
-      name: "Amazing Decadent Pecan PIE Best Cake",
-      details:
-        "Pie is a rich chewy, nutty, sweet holiday staple. For many the holidays aren’t the holidays without must explain all this  of denouncing pleasure and praising pain was born and…",
-    },
-    {
-      img: wrap,
-      sort: "Appetizers",
-      name: "Vegetable & Chicken Wrap For Lunch",
-      details:
-        "I love a good salad for lunchand Pakistan posted dinner.And I have them often. But I also love my carbs. So a little while back,qui dolorem ipsum quia dolor sit…",
-    },
-    {
-      img: sushi,
-      sort: "Sushi",
-      name: "Black Special hot Suchi with Salad Serving",
-      details:
-        "I always love a little sweet andcreamy salty taste at parties and this Brie has just that! Baked brie is an appetizer that will wow the entire party. Sed ut perspiciatis…",
-    },
-    {
-      img: breakfast,
-      sort: "Appetizers",
-      name: "Best Ever Healthy Breakfast Everyday",
-      details:
-        "Impress your family with this beautiful cut of meat! When making this prime rib add healthy ingredients in your breakfast and stay active. Hope you’ll enjoy this cooked breakfast. Sed ut…",
-    },
-  ]);
+  const { newArrival } = useNewArrival();
   return (
     <div className="w-full mt-20 bg-[#F2F2F2] pb-3 ">
       <div className="max-w-7xl flex flex-col gap-5 mx-auto container min-md:p-10">
@@ -52,7 +19,7 @@ export default function NewArrival() {
           </div>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5">
-          {newarrival.map((el, index) => (
+          {newArrival.map((el, index) => (
             <div
               key={index}
               className="flex flex-col bg-white rounded-2xl p-3 gap-4"
